@@ -3,3 +3,5 @@ This is a test file.
 This is a change which I make in order to learn how to mmake and merge pull requests.
 
 Bye!
+
+Additional testing while pull request is up!
