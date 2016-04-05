@@ -5,3 +5,7 @@ This is a change which I make in order to learn how to mmake and merge pull requ
 Bye!
 
 Additional testing while pull request is up!
+
+This is second pull request.
+
+One more change!
