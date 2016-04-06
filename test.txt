@@ -9,3 +9,5 @@ Additional testing while pull request is up!
 This is second pull request.
 
 One more change!
+
+Master change!
