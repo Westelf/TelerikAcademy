@@ -8,7 +8,7 @@
 
 */
 
-function sum() {
+function sum(params) {
 		var sum = 0,i, len;;
 		if (params === undefined) {
 			throw 'the parameter is undefined';

@@ -7,9 +7,27 @@
 */
 
 function findPrimes(params) {
-	var primes, k, len, min, max;
+	var primes, k, len, min, max, number, array = [];
 
-	if ()
+	if (params.length != 2) {
+		throw 'params are not two numbers';
+	}
+
+	function returnMax (a,b) {
+		if (a >= b) {
+			return a;
+		} else {
+			return b;
+		}
+	}
+
+	function returnMin (a,b) {
+		if (a <= b) {
+			return a;
+		} else {
+			return b;
+		}
+	}
 
 	function checkIfPrime (number) {
 		var divider, i;
@@ -31,11 +49,24 @@ function findPrimes(params) {
 		}
 	}
 
-	for (k = 0, len = params.length; k < len; k += 1) {
-
-
-
+	if (isNaN(parseInt(params[0])) || isNaN(parseInt(params[1]))) {
+		throw 'one of the parameters is not convertible to number';
+	} else {
+		max = returnMax(parseInt(params[0]), parseInt(params[1]));
+		min = returnMin(parseInt(params[0]), parseInt(params[1]));
 	}
+
+	number = max;
+
+	while(number >= min) {
+		if (checkIfPrime(number)) {
+			array.push(number);
+		}
+
+		number -= 1;
+	} 
+
+	return array;
 
 }
 
